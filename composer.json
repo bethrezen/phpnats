@@ -1,5 +1,5 @@
 {
-    "name": "repejota/nats",
+    "name": "bethrezen/nats",
     "description": "A nats.io client in PHP",
     "type": "library",
     "license": "MIT",

@@ -230,12 +230,7 @@ class Socket
 
     public function isActive()
     {
-        if (is_resource($this->socket) === true && feof($this->socket) === false) {
-            $info = stream_get_meta_data($this->socket);
-            return empty($info['timed_out']) === true;
-        }
-
-        return false;
+        return is_resource($this->socket) === true && feof($this->socket) === false;
     }
 
     protected function secondsToSecondsAndMicroSeconds($seconds)
